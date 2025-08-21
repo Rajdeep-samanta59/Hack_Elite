@@ -1,0 +1,10 @@
+{
+  "timestamp": "20250821_131928",
+  "model_path": "trained_models\\face_recognizer_model_20250821_131928.yml",
+  "model_filename": "face_recognizer_model_20250821_131928.yml",
+  "training_samples": 5,
+  "user_id": 1,
+  "model_type": "LBPH_Face_Recognizer",
+  "training_data_shape": "(5, 200, 200)",
+  "labels_shape": "(5,)"
+}
