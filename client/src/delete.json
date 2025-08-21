@@ -1,0 +1,218 @@
+{
+  "project_config": {
+    "name": "Medical Hero Section",
+    "framework": "React with Tailwind CSS",
+    "responsive": true,
+    "animations": true,
+    "focus": "Hero section only with doctor showcase"
+  },
+  "color_palette": {
+    "primary_blue": "#3B82F6",
+    "light_blue": "#60A5FA",
+    "accent_blue": "#1E40AF",
+    "background_light": "#F8FAFC",
+    "background_gradient": "linear-gradient(135deg, #EBF4FF 0%, #DBEAFE 100%)",
+    "white": "#FFFFFF",
+    "text_dark": "#1F2937",
+    "text_light": "#6B7280",
+    "success_green": "#10B981",
+    "pink_accent": "#EC4899"
+  },
+  "hero_section_layout": {
+    "hero_section": {
+      "layout": "two-column grid",
+      "left_column": {
+        "content": [
+          {
+            "type": "pill_badge",
+            "icon": "medical capsule",
+            "color": "light_blue"
+          },
+          {
+            "type": "headline",
+            "text": "Skip the travel! Take Online Doctor Consultation",
+            "styling": "large font, 'Online Doctor Consultation' in blue"
+          },
+          {
+            "type": "description",
+            "text": "Tonic is a digital healthcare service for customers that helps to make high quality health information."
+          },
+          {
+            "type": "cta_buttons",
+            "buttons": [
+              {
+                "text": "Get Started",
+                "style": "primary blue rounded button"
+              },
+              {
+                "text": "Watch a Video",
+                "style": "secondary with play icon",
+                "icon": "orange play button"
+              }
+            ]
+          }
+        ]
+      },
+      "right_column": {
+        "type": "doctor_showcase",
+        "elements": [
+          {
+            "type": "main_doctor_image",
+            "description": "Smiling male doctor in white coat with stethoscope",
+            "background": "circular blue gradient background",
+            "animation": "floating elements around doctor"
+          },
+          {
+            "type": "floating_elements",
+            "elements": [
+              {
+                "type": "satisfaction_card",
+                "content": "99.45% satisfaction rate",
+                "position": "top-left",
+                "animation": "gentle float"
+              },
+              {
+                "type": "doctor_profile_card",
+                "content": {
+                  "name": "Jhon Deo",
+                  "location": "New York, United States",
+                  "button": "Appointment"
+                },
+                "position": "top-right",
+                "animation": "gentle float"
+              },
+              {
+                "type": "calendar_widget",
+                "content": "January 2022 mini calendar",
+                "position": "bottom-right",
+                "highlight": "06 Thursday",
+                "animation": "gentle float"
+              },
+              {
+                "type": "decorative_dots",
+                "colors": ["blue", "pink", "green"],
+                "positions": "scattered around",
+                "animation": "slow rotation and floating"
+              }
+            ]
+          },
+          {
+            "type": "rotating_elements",
+            "description": "Circular dotted line that rotates around the doctor",
+            "animation": "continuous 360-degree rotation, 20-30 seconds duration"
+          }
+        ]
+      }
+    },
+    "container_specs": {
+      "height": "min-h-screen or min-h-[600px]",
+      "background": "gradient from light blue to white",
+      "padding": "px-4 sm:px-6 lg:px-8",
+      "display": "grid lg:grid-cols-2 gap-8 lg:gap-12"
+    }
+  },
+  "responsive_breakpoints": {
+    "mobile": {
+      "max_width": "768px",
+      "layout_changes": [
+        "Stack hero columns vertically",
+        "Reduce doctor image size",
+        "Stack filter elements vertically",
+        "Adjust floating elements positioning"
+      ]
+    },
+    "tablet": {
+      "max_width": "1024px",
+      "layout_changes": [
+        "Adjust spacing between elements",
+        "Resize floating cards",
+        "Optimize navigation menu"
+      ]
+    },
+    "desktop": {
+      "min_width": "1025px",
+      "layout": "Full two-column layout as shown"
+    }
+  },
+  "animations": {
+    "doctor_floating_elements": {
+      "type": "continuous_float",
+      "duration": "3-4 seconds",
+      "easing": "ease-in-out",
+      "movement": "gentle up and down"
+    },
+    "rotating_border": {
+      "type": "continuous_rotation",
+      "duration": "25 seconds",
+      "easing": "linear",
+      "element": "dotted circular line around doctor"
+    },
+    "decorative_dots": {
+      "type": "slow_float_and_fade",
+      "duration": "4-6 seconds",
+      "randomization": true
+    },
+    "hover_effects": {
+      "buttons": "scale up slightly and add shadow",
+      "cards": "lift up with shadow increase",
+      "nav_items": "color transition"
+    }
+  },
+  "component_specifications": {
+    "doctor_section": {
+      "container": "relative positioning for absolute elements",
+      "main_circle": "large circular gradient background",
+      "doctor_image": "centered, professional medical photo",
+      "floating_cards": "positioned absolutely around the circle",
+      "rotation_element": "CSS animation for continuous rotation"
+    },
+    "gradient_backgrounds": {
+      "hero_background": "light blue gradient",
+      "doctor_circle": "blue to light blue radial gradient",
+      "card_backgrounds": "white with subtle shadows"
+    },
+    "typography": {
+      "heading": "font-bold text-4xl lg:text-5xl",
+      "subheading": "text-lg text-gray-600",
+      "body": "text-base text-gray-700",
+      "accent_text": "text-blue-500 font-semibold"
+    }
+  },
+  "suggested_libraries": {
+    "animations": [
+      "Framer Motion (recommended for complex animations)",
+      "React Spring (for smooth animations)",
+      "CSS animations (for simple rotations)"
+    ],
+    "icons": [
+      "Heroicons",
+      "Lucide React",
+      "React Icons"
+    ],
+    "utilities": [
+      "Tailwind CSS (already specified)",
+      "clsx for conditional classes"
+    ]
+  },
+  "implementation_notes": {
+    "key_features": [
+      "Responsive design with mobile-first approach",
+      "Smooth animations that don't impact performance",
+      "Accessible navigation and form elements",
+      "Professional medical aesthetic",
+      "Clear call-to-action hierarchy"
+    ],
+    "performance_considerations": [
+      "Optimize doctor image for web",
+      "Use CSS transforms for animations (GPU accelerated)",
+      "Lazy load images below the fold",
+      "Minimize animation complexity on mobile devices"
+    ],
+    "accessibility": [
+      "Alt text for all images",
+      "Keyboard navigation support",
+      "Sufficient color contrast ratios",
+      "Screen reader friendly structure"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "ai-eye-health-system",
+  "version": "1.0.0",
+  "description": "AI-Powered Eye Health Monitoring System - Complete telemedicine platform",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "start": "cd server && npm start"
+  },
+  "keywords": ["healthcare", "telemedicine", "ai", "eye-health", "react", "nodejs"],
+  "author": "Eye Health Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
